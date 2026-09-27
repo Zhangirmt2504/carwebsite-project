@@ -1,1 +1,45 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f5f6f8;--surface:#fff;--text:#17191d;--muted:#686d76;--dark:#17191d;--accent:#d7ff3f;--line:#e1e3e8;--radius:18px}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.site-header{min-height:76px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;gap:30px;background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.logo{font-size:30px;font-weight:900;letter-spacing:-1px}.logo span{color:#8ba900}
+.navigation{display:flex;align-items:center;justify-content:flex-end;gap:28px;flex-wrap:wrap}
+.navigation a{padding:10px 0;color:var(--muted);font-weight:700;position:relative}
+.navigation a:hover,.navigation a.current{color:var(--text)}
+.navigation a.current:after{content:"";position:absolute;left:0;right:0;bottom:2px;height:3px;background:var(--accent);border-radius:5px}
+.hero{min-height:650px;padding:80px 8%;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;background:var(--dark);color:#fff}
+.hero h1{font-size:clamp(42px,6vw,78px);line-height:1.02;letter-spacing:-3px;max-width:760px}
+.hero-content>p:not(.eyebrow){max-width:650px;color:#c8cbd0;font-size:19px;margin:24px 0 32px}
+.eyebrow{font-size:13px;font-weight:900;letter-spacing:2px;color:#8ba900;margin-bottom:12px}
+.hero .eyebrow{color:var(--accent)}
+.button-group{display:flex;gap:14px;flex-wrap:wrap}
+.button{display:inline-flex;align-items:center;justify-content:center;background:var(--accent);color:var(--dark);font-weight:900;padding:13px 22px;border:2px solid var(--accent);border-radius:999px;cursor:pointer}
+.button:hover{transform:translateY(-2px)}
+.button-outline{background:transparent;color:#fff;border-color:#555}
+.hero-visual{display:flex;flex-direction:column;align-items:center;gap:18px}
+.car-shape{width:min(100%,460px);aspect-ratio:1.45/1;border-radius:35% 35% 20% 20%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#d7ff3f,#8ba900);color:#17191d;font-size:58px;font-weight:900;box-shadow:0 35px 80px #0008}
+.hero-visual figcaption{color:#b9bdc4;font-weight:700}
+.section{padding:90px 8%}.section-heading{max-width:760px;margin-bottom:40px}.section-heading h2{font-size:clamp(30px,4vw,48px);line-height:1.1}
+.feature-flex{display:flex;gap:20px;flex-wrap:wrap}
+.feature-card{flex:1 1 240px;background:var(--surface);padding:30px;border:1px solid var(--line);border-radius:var(--radius)}
+.number{font-weight:900;color:#8ba900}.feature-card h3{font-size:25px;margin:12px 0}.feature-card p,.car-info p,.team-flex p{color:var(--muted)}
+.dark-section{background:var(--dark);color:#fff}.category-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.category-grid article{padding:28px;border:1px solid #34373d;border-radius:var(--radius);min-height:170px}.category-grid span{color:var(--accent);font-weight:900}.category-grid h3{font-size:25px;margin:15px 0 8px}.category-grid p{color:#b8bcc4}
+.site-footer{padding:30px 8%;display:flex;align-items:center;justify-content:space-between;gap:20px;background:#0e0f11;color:#aaa}.site-footer a{color:var(--accent);font-weight:800}
+.page-intro{padding:90px 8% 55px;background:var(--dark);color:#fff}.page-intro h1{font-size:clamp(42px,6vw,70px);line-height:1.05;letter-spacing:-2px}.page-intro>p:last-child{max-width:720px;color:#bfc2c8;margin-top:18px;font-size:18px}
+.cars-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.car-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.car-placeholder{height:190px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#20242a,#3a4048);color:var(--accent);font-size:30px;font-weight:900;letter-spacing:2px}
+.car-info{padding:25px}.car-info h2{margin:10px 0 8px;font-size:25px}.car-info ul{display:flex;gap:18px;list-style:none;color:var(--muted);font-size:14px;margin-top:16px}.tag{display:inline-block;background:#eff5d1;padding:5px 10px;border-radius:99px;font-size:12px;font-weight:900}
+.comparison{padding-top:0}.table-wrap{overflow-x:auto;background:var(--surface);border-radius:var(--radius);border:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;min-width:650px}th,td{text-align:left;padding:16px 18px;border-bottom:1px solid var(--line)}th{background:#eef0f3}
+.about-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:50px;align-items:start}.about-grid h2{font-size:40px;margin-bottom:18px}.about-grid p{color:var(--muted);margin-bottom:16px}
+.quote-box{background:var(--dark);color:#fff;padding:40px;border-radius:var(--radius);font-size:25px;font-weight:800}.quote-box small{display:block;margin-top:20px;color:#aaa;font-size:13px}
+.process-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.process-grid article{padding:25px;border:1px solid #34373d;border-radius:var(--radius)}.process-grid span{color:var(--accent);font-weight:900}.process-grid h3{margin:15px 0 8px}.process-grid p{color:#b8bcc4}
+.team-flex{display:flex;gap:18px;flex-wrap:wrap}.team-flex article{flex:1 1 200px;padding:25px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}.contact-info h2{font-size:40px;margin-bottom:30px}.contact-list{display:flex;flex-direction:column;gap:15px}.contact-list article{padding:20px;background:var(--surface);border:1px solid var(--line);border-radius:14px}.contact-list h3{font-size:16px}.contact-list p{color:var(--muted)}
+.contact-form{background:var(--surface);padding:32px;border:1px solid var(--line);border-radius:var(--radius);display:flex;flex-direction:column;gap:18px}.form-row{display:flex;gap:18px}.form-row>div{flex:1}.contact-form label{display:block;font-weight:800;margin-bottom:7px}.contact-form input,.contact-form select,.contact-form textarea{width:100%;padding:13px 14px;border:1px solid #d2d5db;border-radius:10px;font:inherit;background:#fff}.contact-form textarea{resize:vertical}.faq{padding-top:0}.faq-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.faq details{background:var(--surface);padding:20px;border:1px solid var(--line);border-radius:14px}.faq summary{font-weight:900;cursor:pointer}.faq details p{color:var(--muted);margin-top:12px}
 
