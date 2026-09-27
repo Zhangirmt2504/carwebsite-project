@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact the CAR project team.">
+  <title>CAR | Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">CAR<span>.</span></a>
+  <nav class="navigation" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="cars.html">Cars</a>
+    <a href="about.html">About</a>
+    <a class="current" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-intro">
+    <p class="eyebrow">GET IN TOUCH</p>
+    <h1>Contact the CAR team</h1>
+    <p>Have a question about a car category? Send us a message using the form.</p>
+  </section>
+
+  <section class="section contact-grid">
+    <div class="contact-info">
+      <p class="eyebrow">CONTACT DETAILS</p>
+      <h2>We are ready to help</h2>
+      <div class="contact-list">
+        <article><h3>Email</h3><p>hello@car-project.example</p></article>
+        <article><h3>Phone</h3><p>+7 700 000 00 00</p></article>
+        <article><h3>Location</h3><p>Astana, Kazakhstan</p></article>
+      </div>
+    </div>
+
+    <form class="contact-form" action="#" method="post">
+      <div class="form-row">
+        <div><label for="name">Full name</label><input id="name" name="name" type="text" placeholder="Your name" required></div>
+        <div><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" required></div>
+      </div>
+      <div><label for="category">Car category</label>
+        <select id="category" name="category">
+          <option value="sedan">Sedan</option><option value="suv">SUV</option><option value="sport">Sports</option><option value="electric">Electric</option><option value="compact">Compact</option><option value="luxury">Luxury</option>
+        </select>
+      </div>
+      <div><label for="message">Message</label><textarea id="message" name="message" rows="6" placeholder="Tell us what you need..." required></textarea></div>
+      <button class="button" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section class="section faq">
+    <div class="section-heading"><p class="eyebrow">FAQ</p><h2>Common questions</h2></div>
+    <div class="faq-grid">
+      <details><summary>Which car is good for a city?</summary><p>A compact car or sedan can be practical for everyday urban driving.</p></details>
+      <details><summary>Which car has more space?</summary><p>SUVs usually provide more passenger and cargo space than compact cars.</p></details>
+      <details><summary>Can I compare categories?</summary><p>Yes. Visit the Cars page for a quick comparison table.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 CAR. Drive with confidence.</p>
+  <a href="index.html">Back to Home</a>
+</footer>
+</body>
+</html>
